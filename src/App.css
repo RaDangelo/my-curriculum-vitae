@@ -4,15 +4,23 @@
 
 .App-logo {
   height: 80px;
-  margin: 6px;
+  animation: App-logo-origin-spin reverse 6s linear;  
 }
 
-.Lateral-logo {
-  animation: App-logo-lateral-spin infinite 20s linear;
+.small {
+  margin-left: 30px;
 }
 
-.Vertical-logo {
-  animation: App-logo-vertical-spin infinite 20s linear;
+.large {
+  margin-left: 8px;
+}
+
+.Lateral-logo:hover {
+  animation: App-logo-lateral-spin infinite 5s linear;
+}
+
+.Vertical-logo:hover {
+  animation: App-logo-vertical-spin infinite 5s linear;
 }
 
 .name {
@@ -28,6 +36,11 @@
 
 .App-intro {
   font-size: large;
+}
+
+@keyframes App-logo-origin-spin {
+  /*from { transform: rotate(); }*/
+  to { transform: rotate(0deg); }
 }
 
 @keyframes App-logo-vertical-spin {
