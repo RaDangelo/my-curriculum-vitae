@@ -13,5 +13,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://radangelo.github.io/my-curriculum-vitae/public/index.html"
+  "homepage" : "."
 }
