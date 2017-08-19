@@ -14,13 +14,17 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={jsLogo} className="App-logo Lateral-logo large" alt="js-logo" />                           
-          <img src={angularLogo} className="App-logo Lateral-logo small" alt="angular-logo" />                 
-          <img src={reactLogo} className="App-logo Vertical-logo large" alt="react-logo" />
-          <img src={nodeLogo} className="App-logo Lateral-logo large" alt="node-logo" />     
-          <img src={htmlLogo} className="App-logo Lateral-logo small" alt="html-logo" />                       
-          <img src={cssLogo} className="App-logo Lateral-logo small" alt="css-logo" />                       
-          <img src={javaLogo} className="App-logo Lateral-logo small" alt="java-logo" />                       
+          <div className="logosContainer">
+            <span className="arrowChange">{"<"}</span>
+            <img src={jsLogo} className="App-logo Lateral-logo large" alt="js-logo" title="JavaScript" />
+            <img src={angularLogo} className="App-logo Lateral-logo small" alt="angular-logo" title="Angular" />
+            <img src={reactLogo} className="App-logo Vertical-logo large" alt="react-logo" title="React" />
+            <img src={nodeLogo} className="App-logo Lateral-logo large" alt="node-logo" title="Node.js" />
+            <img src={htmlLogo} className="App-logo Lateral-logo small" alt="html-logo" title="HTML5" />
+            <img src={cssLogo} className="App-logo Lateral-logo small" alt="css-logo" title="CSS3" />
+            <img src={javaLogo} className="App-logo Lateral-logo small" alt="java-logo" title="Java" />
+            <span className="arrowChange">{">"}</span>
+          </div>
           <h2><code className="name">{"<curriculum>"} Rafael D'Angelo Bergamini {"</curriculum>"}</code></h2>
         </div>
         <p className="App-intro">

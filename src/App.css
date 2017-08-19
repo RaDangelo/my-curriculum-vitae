@@ -15,6 +15,21 @@
   margin-left: 8px;
 }
 
+.logosContainer {
+  display: inline-flex;
+}
+
+.arrowChange {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+  margin: 8px 20px;
+  top: 8px;
+  position: relative;
+}
+
 .Lateral-logo:hover {
   animation: App-logo-lateral-spin infinite 5s linear;
 }
