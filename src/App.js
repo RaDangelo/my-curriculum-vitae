@@ -23,6 +23,8 @@ class App extends Component {
             <img src={htmlLogo} className="App-logo Lateral-logo small" alt="html-logo" title="HTML5" />
             <img src={cssLogo} className="App-logo Lateral-logo small" alt="css-logo" title="CSS3" />
             <img src={javaLogo} className="App-logo Lateral-logo small" alt="java-logo" title="Java" />
+            {/* <img src={javaLogo} className="App-logo Lateral-logo small" alt="spring-logo" title="Spring" /> */}
+            {/* <img src={javaLogo} className="App-logo Lateral-logo small" alt="iib-logo" title="Integration Bus" /> */}
             <span className="arrowChange">{">"}</span>
           </div>
           <h2><code className="name">{"<curriculum>"} Rafael D'Angelo Bergamini {"</curriculum>"}</code></h2>
