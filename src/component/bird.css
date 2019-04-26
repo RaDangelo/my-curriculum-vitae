@@ -1,0 +1,109 @@
+.bird {
+    background-image: url('../logos/bird-cells.svg');
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+
+  }
+
+  .bird-container {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translate(-50%,-50%);
+  will-change: transform;  
+}
+
+.top {
+  animation: fly-top 4s infinite  normal ease-out;
+}
+
+.bottom {
+  animation: fly-bottom 4s infinite  normal ease-out;
+}
+
+.jump {
+  animation: jump 1s normal ease-in-out;
+}
+
+  .bird-one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+  }
+
+  .bird-two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+  }
+
+  @keyframes fly-cycle {
+    100% {
+    background-position: -900px 0;
+    } 
+  }
+
+  @keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+@keyframes fly-top {
+  0% {
+      left:0px;
+  }
+
+  25% {
+    top:70%;
+  }
+
+  50% {
+    top:50%;
+  }
+
+  100% {
+      left:1500px;
+  }
+}
+
+@keyframes fly-bottom {
+  0% {
+      left:0px;
+      top: 70%;
+  }
+
+  25% {
+    top:50%;
+  }
+
+  50% {
+    top:70%;
+  }
+
+  100% {
+      left:1500px;
+  }
+}
+
+@keyframes jump {
+  100% {
+    top: 40%;
+  }
+}
+
+  
